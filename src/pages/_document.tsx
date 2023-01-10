@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
             name="keywords"
             content="Sites Websites modernos criação de sites javascript typescript html css landingpage lançamentos  "
           />
-          <meta property="og:title" content="Prismarine Studios" />
+          <meta property="og:title" content="Agência Nova geração" />
           <meta
             property="og:description"
             content="Aqui na Nova Geração nós construíos seu website do seu jeito, sempre com o que há de mais novo e moderno no mercado."
