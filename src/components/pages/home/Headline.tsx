@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-
 import Slider from 'react-slick'
 
 export const Headline: NextPage = () => {
@@ -13,7 +12,7 @@ export const Headline: NextPage = () => {
   }
 
   return (
-    <section className="bg-green-500 w-screen min-h-screen h-full flex flex-col items-center justify-center mt-20">
+    <section className="bg-green-500 w-screen min-h-screen h-full flex flex-col items-center justify-center ">
       <div className="container">
         <h1 className="text-5xl font-effective text-black">
           Nossos cases de sucesso

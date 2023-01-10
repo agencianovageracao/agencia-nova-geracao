@@ -23,7 +23,6 @@ export class Feedbacks extends Component {
       arrows: false,
       speed: 500,
       slidesToShow: 3,
-      draggable: false,
       autoplay: true,
       centerPadding: '10px',
       slidesToScroll: 1,

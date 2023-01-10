@@ -85,3 +85,47 @@ html::-webkit-scrollbar-button {
   display: flex;
   gap: 20px;
 }
+
+.card-glass {
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(48, 48, 48, 0.55);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.faq-trigger > .chevron > .icon {
+  transition: all 0.2s ease;
+}
+
+.faq-trigger[data-state='open'] > .chevron > .icon {
+  transform: rotate(135deg);
+}
+
+.faq-content {
+  overflow: hidden;
+}
+.faq-content[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+.faq-content[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { Footer } from '../components/globals/Footer'
+import { Faq } from '../components/pages/home/Faq'
 import { Feedbacks } from '../components/pages/home/Feedbacks'
 import { Header } from '../components/pages/home/Header'
 import { Headline } from '../components/pages/home/Headline'
@@ -16,7 +18,9 @@ export default function Home() {
         <Headline />
         <Services />
         <Feedbacks />
+        <Faq />
       </main>
+      <Footer />
     </>
   )
 }

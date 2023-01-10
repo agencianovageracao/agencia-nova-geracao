@@ -1,12 +1,11 @@
 import { NextPage } from 'next'
-
 import { CaretDown } from 'phosphor-react'
 
 import { Navbar } from '../../globals/Navbar'
 
 export const Header: NextPage = () => {
   return (
-    <header>
+    <header className="pb-20">
       <Navbar />
       <div className="mt-28">
         <div className="container flex justify-center gap-8">
