@@ -50,7 +50,7 @@ export const Faq: NextPage = () => {
             <Accordion.Item
               data-state="closed"
               className="rounded overflow-hidden"
-              value="item-1"
+              value="item-2"
             >
               <Accordion.AccordionTrigger className="faq-trigger flex gap-4 items-center border-white p-5 border-2 w-full">
                 <div className="chevron w-14 h-14 bg-white text-green-500 flex items-center justify-center rounded">
@@ -76,7 +76,7 @@ export const Faq: NextPage = () => {
             <Accordion.Item
               data-state="closed"
               className="rounded overflow-hidden"
-              value="item-1"
+              value="item-3"
             >
               <Accordion.AccordionTrigger className="faq-trigger flex gap-4 items-center border-white p-5 border-2 w-full">
                 <div className="chevron w-14 h-14 bg-white text-green-500 flex items-center justify-center rounded">
@@ -102,7 +102,7 @@ export const Faq: NextPage = () => {
             <Accordion.Item
               data-state="closed"
               className="rounded overflow-hidden"
-              value="item-1"
+              value="item-4"
             >
               <Accordion.AccordionTrigger className="faq-trigger flex gap-4 items-center border-white p-5 border-2 w-full">
                 <div className="chevron w-14 h-14 bg-white text-green-500 flex items-center justify-center rounded">
