@@ -1,6 +1,5 @@
 import { CaretLeft, CaretRight, Star } from 'phosphor-react'
 import { Component } from 'react'
-
 import Slider from 'react-slick'
 
 export class Feedbacks extends Component {
@@ -39,7 +38,9 @@ export class Feedbacks extends Component {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            arrows: false,
+            dots: true
           }
         },
         {
@@ -55,7 +56,7 @@ export class Feedbacks extends Component {
     return (
       <section className="py-20 bg-green-500">
         <div className="container">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-0 text-center md:text-left justify-between items-center">
             <h1 className="text-5xl font-effective max-w-lg text-black">
               O que nossos clientes falam sobre nós?
             </h1>

@@ -7,11 +7,14 @@
   src: url(/fonts/effective_way_7.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   @apply bg-gray-100 text-gray-900;
 
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar,
@@ -36,8 +39,8 @@ html::-webkit-scrollbar-button {
 
 .container {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -128,4 +131,59 @@ html::-webkit-scrollbar-button {
   to {
     height: 0;
   }
+}
+
+.navbar-animation-opening {
+  animation: navbarOpen 0.5s ease-in-out forwards;
+}
+
+.navbar-animation-closing {
+  animation: navbarClose 0.5s ease-in-out forwards;
+}
+
+@keyframes navbarOpen {
+  from {
+    top: -1000px;
+    height: 0px;
+  }
+  to {
+    top: 0;
+    height: 100%;
+  }
+}
+
+@keyframes navbarClose {
+  from {
+    top: 0;
+    height: 100%;
+    position: fixed;
+  }
+  to {
+    top: -1000px;
+    height: 0px;
+  }
+}
+
+.grid-footer {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .grid-footer {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
+.faq-title {
+  position: sticky !important;
+  top: 100px;
+  left: 0;
+  max-width: 850px;
+  width: 100%;
 }

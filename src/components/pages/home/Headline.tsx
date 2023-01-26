@@ -12,16 +12,16 @@ export const Headline: NextPage = () => {
   }
 
   return (
-    <section className="bg-green-500 w-screen min-h-screen h-full flex flex-col items-center justify-center ">
+    <section className="bg-green-500 w-screen min-h-screen py-10 flex flex-col items-center justify-center ">
       <div className="container">
-        <h1 className="text-5xl font-effective text-black">
+        <h1 className="text-5xl text-center lg:text-left font-effective text-black">
           Nossos cases de sucesso
         </h1>
-        <div className="mt-40 mb-10 h-fit">
+        <div className="mt-20 mb-10 h-fit">
           <Slider {...settings}>
             <div className="pb-20">
-              <div className="flex justify-between items-center gap-20">
-                <div className="max-w-[700px] h-full max-h-[483px] relative flex items-center justify-center">
+              <div className="flex flex-col text-center lg:text-left lg:flex-row justify-between items-center gap-20">
+                <div className="max-w-[500px] w-full h-full max-h-[483px] relative flex items-center justify-center lg:max-w-[700px]">
                   <img
                     className="absolute first-letter:bottom-0 top-0"
                     src="/illustrations/border.svg"

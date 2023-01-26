@@ -4,12 +4,12 @@ import Link from 'next/link'
 export const Footer: NextPage = () => {
   return (
     <footer className="bg-green-500 p-20">
-      <div className="container flex items-ceenter justify-between items-center pb-20  border-b-8 border-b-black">
+      <div className="container flex flex-col lg:flex-row text-center lg:text-left items-ceenter justify-between items-center pb-20  border-b-8 border-b-black">
         <h1 className="text-5xl font-effective max-w-[650px]">
           Vamos começar um projeto juntos?
         </h1>
-        <div className="flex flex-col items-end justify-end">
-          <p className="max-w-[521px] text-right">
+        <div className="flex flex-col items-center lg:items-end justify-center lg:justify-end">
+          <p className="max-w-[521px] text-center lg:text-right mt-5 lg:mt-0">
             Seu projeto merece ficar em boas mãos, conte com a nossa agência
             para isso. Tem todas informações e está preparado? Então vamos
             começar!
@@ -22,10 +22,7 @@ export const Footer: NextPage = () => {
       </div>
       <div className="py-10 mt-10">
         <div className="container">
-          <div
-            className="grid gap-8"
-            style={{ gridTemplateColumns: '2fr 1fr 1fr' }}
-          >
+          <div className="grid gap-8 grid-footer">
             <div>
               <div className="max-w-[150px]">
                 <img src="/brand/iconwhite.svg" alt="Logo" />

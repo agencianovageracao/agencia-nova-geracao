@@ -1,12 +1,11 @@
 import { NextPage } from 'next'
-
 import * as Icon from 'phosphor-react'
 
 export const Services: NextPage = () => {
   return (
     <section className="my-28">
-      <div className="container flex justify-between gap-16 items-center">
-        <div className="max-w-[563px] w-full">
+      <div className="container flex flex-col xl:flex-row justify-between gap-16 items-center">
+        <div className="max-w-[563px] w-full text-center xl:text-left">
           <h1 className="text-5xl font-effective text-black">
             O que nós temos a oferecer de novo para sua empresa?
           </h1>
@@ -18,8 +17,8 @@ export const Services: NextPage = () => {
             Entre em contato
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-8 gap-y-20">
-          <div>
+        <div className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-8 gap-y-20">
+          <div className="flex flex-col items-center md:items-start">
             <div className="bg-gray-200 w-20 h-20 flex items-center justify-center rounded-full">
               <Icon.Database size={50} />
             </div>
@@ -29,7 +28,7 @@ export const Services: NextPage = () => {
               no mercado digital.
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <div className="bg-gray-200 w-20 h-20 flex items-center justify-center rounded-full">
               <Icon.Database size={50} />
             </div>
@@ -39,7 +38,7 @@ export const Services: NextPage = () => {
               qualidade para atingir o público que <b>você quer</b>.
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <div className="bg-gray-200 w-20 h-20 flex items-center justify-center rounded-full">
               <Icon.Database size={50} />
             </div>
@@ -49,7 +48,7 @@ export const Services: NextPage = () => {
               mais resultados.
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <div className="bg-gray-200 w-20 h-20 flex items-center justify-center rounded-full">
               <Icon.Database size={50} />
             </div>
